@@ -22,14 +22,14 @@ alert("You decided to not submit the form!");
 </script>
     </head>
     <body>
-        <h1>Eagan Police Department</h1>
+        <h1>{{ headline }}</h1>
         <br>
         <center>
         <h2>Forensic Database</h2>
         <h3><u>Database Entry</u></h3>
-        <a href="index.html">Main</a> | 
+        <a href="{{ url_for('index') }}">Main</a> |
         Database Entry | 
-        <a href="query.html">Query Database</a><br><br>
+        <a href="{{ url_for('query') }}"}>Query Database</a><br><br>
         <hr>
         </center>
         </div>
