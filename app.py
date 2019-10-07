@@ -8,10 +8,10 @@ def index():
     result = ['19001234', '20191001', 'Test case']
     headline = "Eagan Police Department"
     return render_template("index.html", headline=headline, result=result)
-    r = PySQLite.unassignedCases
-        for x in r:
-            result.append(x)
-        return render_template("test_index.html", result=result)
+    # r = PySQLite.unassignedCases
+    #     for x in r:
+    #         result.append(x)
+    #     return render_template("test_index.html", result=result)
 
 @app.route("/entry")
 def entry():
