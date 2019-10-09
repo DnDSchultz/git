@@ -1,12 +1,11 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<div id="top">
+	<link rel="stylesheet" href="static/css/style.css">
         <title>Forensic Database Entry</title>
         <meta name="viewport" content="width-device-width, initial-scale-1.0">
-		<link rel="stylesheet" href="style.css">
-<!--    <link rel="stylesheet" href="css/bootstrap.min.css">-->
-        <img src="download.png" alt="badge" align="right" width= "10%">
+		<link rel="stylesheet" href="/static/style.css">
+        <img src="/static/banner.png" alt="banner" align="right" width= "100%">
         <br>
         <br>
 	        <script type="text/javascript">	
@@ -22,9 +21,8 @@ alert("You decided to not submit the form!");
 </script>
     </head>
     <body>
-        <h1>{{ headline }}</h1>
-        <br>
         <center>
+        <h1>Eagan Police Department</h1>
         <h2>Forensic Database</h2>
         <h3><u>Database Entry</u></h3>
         <a href="{{ url_for('index') }}">Main</a> |
@@ -33,9 +31,7 @@ alert("You decided to not submit the form!");
         <hr>
         </center>
         </div>
-
-			<form>		
-			<div>
+			<form>
 			<table>
 			<col width="5">
 			<col width="250">
@@ -48,7 +44,7 @@ alert("You decided to not submit the form!");
 				<input name="c_num" size="31" type="number" id="case" placeholder="8 digit">
 			</td>
 			</tr>
-			</div><br>
+			<br>
 			<div>
 			<tr>
 			<td>

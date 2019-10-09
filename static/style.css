@@ -1,0 +1,22 @@
+
+body {
+	background-color: lightblue;
+}
+
+h1, h2, h3 {color: navy;
+}
+
+img {
+    border-style: groove;
+    border-width: medium;
+
+}
+
+th {
+    background-color: #4287f5;
+    text-align: left;
+}
+
+tr, td {
+    text-align: left;
+}
