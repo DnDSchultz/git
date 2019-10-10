@@ -1,18 +1,17 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title id="title">Forensic Database Unassigned Cases</title>
-        	<meta name="viewport" content="width-device-width, initial-scale-1.0">
-			<link rel="stylesheet" href="/static/style.css">
+        <title>Forensic Database Unassigned Cases</title>
+		<meta name="viewport" content="width-device-width, initial-scale-1.0">
+		<link rel="stylesheet" href="/static/style.css">
     </head>
     <body>
-	    <img src="/static/banner.png" alt="banner" align="right" width= "100%">
-        	<br><br>
+	    <img src="/static/bannerO.png" alt="banner" align="right" width= "100%">
+        	<br>
+			<br>
 	<header>
         <center>
-        <h1 id="EPD">Eagan Police Department</h1>
-       	<h2 id="ForensicDB">Forensic Database</h2>
-        	<h3><u>Unassigned Cases</u></h3>
+        	<h2><u>Unassigned Cases</u></h2>
 	<nav>
         	Main | 
         	<a href="{{ url_for('entry') }}">Database Entry</a> |
@@ -22,9 +21,9 @@
         <center>
         	<table style="width:50%">
         		<tr>
-        			<th>Case Number</th>
-        			<th>Date Requested</th>
-        			<th>Description</th>
+        			<th align="left">Case Number</th>
+        			<th align="left">Date Requested</th>
+        			<th align="left">Description</th>
         		</tr>
         		<tr>
 					{% for name in result %}
