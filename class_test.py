@@ -1,9 +1,9 @@
 class Case:
     """ Backend for database query and entry to track the status of Forensic cases."""
 
-    def __init__(self, date_requested, date_completed, case_desc,
+    def __init__(self, case_num, date_requested, date_completed, case_desc,
                  forensic_only, is_icac, icac_dispo, rep_ofc, forensic_inv):
-
+        self.cn = case_num #8 didget
         self.dr = date_requested  # Format 2019-01-01
         self.dc = date_completed  # Format 2019-01-01
         self.cd = case_desc  # Short description
@@ -13,6 +13,15 @@ class Case:
         self.ro = rep_ofc  # Last name
         self.fi = forensic_inv  # Last name
 
-ea19001234 = Case("dr","dc","cd","fo","ii","id","ro","fi")
 
-print(ea19001234.cd)
+case_num = ("19001234")
+date_requested = "2018-06-01"
+case_desc = "Test case description"
+forensic_inv = "Null"
+
+
+case = Case(case_num,date_requested,None,case_desc,None,None,None,None,forensic_inv)
+
+li = ("ea" + case.cn)
+
+print(li)
