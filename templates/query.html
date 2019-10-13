@@ -1,17 +1,9 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <div id="top">
-        <title>Forensic Database Query</title>
-        <meta name="viewport" content="width-device-width, initial-scale-1.0">
-		<link rel="stylesheet" href="/static/style.css">
-        <img src="/static/bannerO.png" alt="banner" align="right" width= "100%">
-        <br>
-        <br>
-    </head>
-    <body>
+{% extends "layout.html" %}
+	{% block heading %}
+		Query Database
+	{% endblock %}
+		{% block body %}
         <center>
-        <h2><u>Query Database</u></h2>
         <a href="{{ url_for('index') }}">Main</a> |
 		<a href="{{ url_for('entry') }}">Database Entry</a>
          | Query Database
@@ -31,7 +23,7 @@
 		<a href="#icac">ICAC Cases by Year</a>
 
         </center>
-
+		<div align="left">
 		<br>
 		<h2 id="unassigned">Unassigned Cases (<a href="#index"><font size="4">Index</font></a>)</h2>
 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
@@ -169,31 +161,6 @@
 				sed felis eget. Aliquam ultrices sagittis orci a. Dignissim diam quis enim lobortis. Aliquet porttitor
 				lacus luctus accumsan. Dignissim convallis aenean et tortor at risus viverra adipiscing at.
 			</p>
-
-			<div>
 			</form>
-   </body>
-</html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+		</div>
+{% endblock %}
